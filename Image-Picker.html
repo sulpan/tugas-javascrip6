@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript ES6 - sulpan tanjung</title>
+</head>
+<body style="background-color: rgb(135, 202, 222);">
+    <div>
+        <select onchange="change()" id="One">
+            <option>Select</option>
+            <option value="Mouse">Mouse</option>
+            <option value="Buffalo">Buffalo</option>
+            <option value="Dog">Dog</option>
+            <option value="Elephant">Elephant</option>
+            <option value="Lion">Lion</option>
+        </select>
+    </div><br>
+        <img src="" alt="" id="Two" width="100%"><br>
+
+<script>
+    function change(){
+        let img = document.getElementById("One").value
+        let image = document.getElementById("Two")
+        if(img == "Mouse"){
+           image.src = "mouse.jpg.jpeg"
+            alert ("This is a Mouse!")
+        }else if(img == "Buffalo"){
+            image.src = "kerbau.jpg.jpeg"
+            alert ("This is a Buffalo!")
+        }else if(img == "Dog"){
+            image.src = "anjing.jpg.jpeg"
+            alert ("This is a Dog")
+        }else if(img == "Elephant"){
+            image.src = "gajah.jpg.jpeg"
+            alert ("This is a Elephant")
+        }else if(img == "Lion") {
+            image.src = "singa.jpg.jpeg"
+            alert("This is a Lion")
+        }    
+    }
+</script>
+
+</body>
+</html>
